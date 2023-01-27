@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header-sec{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/olena-sergienko-rsnMYZhYWQk-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.title{
+    display: grid;
+    justify-items: center;
+}
+.title-area{
+    width: 80%;
+    text-align: center;
+    margin: 40px;
+}
+.title-area h1{
+    font-size: 30px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.card-sec{
+    display: grid;
+    justify-items: center;
+    margin: 25px 0;
+}
+.cards{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 60px;
+}
+.card{
+    text-align: center;
+}
+.card a{
+    font-size: 35px;
+}
+@media screen and (max-width:576px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width:769px) and (max-width:900px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.bg{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/images/annie-spratt-0ZPSX_mQ3xI-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team-member{
+    display: grid;
+    justify-items: center;
+}
+.members{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 60px;
+}
+.member{
+}
+.member img{
+    width: 100%;
+}
+.member h2{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
+@media screen and (max-width:576px) {
+    .bg{
+        height: 100%;
+    }
+    .members {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .bg{
+        height: 100%;
+    }
+    .members {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:900px) {
+    .bg {
+            height: 100%;
+        }
+    .members {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.card-type{
+    border: 1px solid blue;
+    text-align: center;
+}
+
